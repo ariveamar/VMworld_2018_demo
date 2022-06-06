@@ -15,3 +15,5 @@
         gw4: "{{ var_gw }}"
         dns4: "{{ var_dns }}"
         state: present
+    - name: return motd to registered var
+      command: ifdown ens192; ifup ens192
