@@ -3,7 +3,7 @@
 - vcenter_server: 10.8.150.6
 - vcenter_user: administrator@vsphere.local
 - vcenter_pass: 'admin.P@ssw0rd'
-- datacenter: virtus-demo
+- datacenter: ansible-demo
 - cluster: RedHat-Cluster
 
 # ESXi settings
