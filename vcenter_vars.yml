@@ -15,7 +15,7 @@
 - vm_name: VM_DEMO
 - template_name: Template-RHEL
 - datastore: esxi-redhat
-- network: VM Network
+- network: ExternalAPI
 - folder: /Redhat
 - dns_server: 1.1.1.1
 
