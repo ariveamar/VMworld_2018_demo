@@ -1,23 +1,23 @@
 ---
 # Global Settings
-- vcenter_server: 10.65.22.1
+- vcenter_server: 10.8.150.6
 - vcenter_user: administrator@vsphere.local
-- vcenter_pass: Esxi@123$%
-- datacenter: Asia-Datacenter1
-- cluster: Asia-Cluster1
+- vcenter_pass: 'admin.P@ssw0rd'
+- datacenter: virtus-demo
+- cluster: RedHat-Cluster
 
 # ESXi settings
-- esxi_hostname: 10.76.33.6
+- esxi_hostname: 10.8.230.110
 - esxi_username: root
-- esxi_password: esxi123
+- esxi_password: 'P@ssw0rd'
 
 # VM settings
-- vm_name: VM_168
-- template_name: ubuntu_t
-- datastore: ds_226_3
+- vm_name: VM_DEMO
+- template_name: Template-RHEL
+- datastore: esxi-redhat
 - network: VM Network
-- folder: /Asia-Datacenter1/vm/
-- dns_server: 8.8.8.8
+- folder: /Redhat
+- dns_server: 1.1.1.1
 
 # Snapshot settings
 - snapshot: fresh_installation
