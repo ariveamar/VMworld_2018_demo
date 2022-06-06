@@ -16,7 +16,7 @@
 - template_name: Template-RHEL
 - datastore: esxi-redhat
 - network: ExternalAPI
-- folder: /Redhat
+- folder: /ansible-demo/vm/
 - dns_server: 1.1.1.1
 
 # Snapshot settings
