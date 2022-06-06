@@ -5,7 +5,7 @@
   tasks:
     - name: Change Hostname
       hostname:
-        name: "{{ var_hostname }}"
+        name="{{ var_hostname }}"
     - name: Add an Ethernet connection with static IP configuration
       nmcli:
         conn_name: ens192
