@@ -16,4 +16,4 @@
         dns4: "{{ var_dns }}"
         state: present
     - name: return motd to registered var
-      command: ifdown ens192; ifup ens192
+      command: ifdown ens192 && ifup ens192
