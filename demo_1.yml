@@ -29,7 +29,7 @@
         datacenter_name: "{{ datacenter }}"
         cluster_name: "{{ cluster }}"
         enable_ha: no
-        enable_drs: yes
+        enable_drs: no
         enable_vsan: no
         state: present
       register: cluster_result
