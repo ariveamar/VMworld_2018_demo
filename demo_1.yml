@@ -57,7 +57,16 @@
       assert:
         that:
           - "host_result.changed"
-
+    - name: Exit ESXi "{{ esxi_hostname }}" from maintenance mode
+      vmware_maintenancemode:
+        validate_certs: no
+        hostname: "{{ vcenter_server }}"
+        username: "{{ vcenter_user }}"
+        password: "{{ vcenter_pass }}"
+        esxi_hostname: "{{ esxi_hostname }}"
+        state: absent
+      register: host_result
+      
     - name: Finish
       debug:
         msg: "Done"
